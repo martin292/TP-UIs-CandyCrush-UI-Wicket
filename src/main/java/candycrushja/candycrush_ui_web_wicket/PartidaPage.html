@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Partida en juego</title>
+</head>
+<body>
+	<h3>Partida</h3>
+	<div style="float: right;">
+		<span wicket:id="representacionVisual" hidden="hidden">2</span>
+	</div>
+	<div style="float: right;">
+		<div>
+			<label>Fila: </label><span wicket:id="fila">2</span> <br /> <label>Columna:</label><span
+				wicket:id="columna">3</span> <br />
+		</div>
+		<div>
+			<table>
+				<tr>
+					<th>Objetivo</th>
+					<th>Estado</th>
+				</tr>
+				<tr wicket:id="objetivos">
+					<td><span wicket:id="objetivoACumplir">Nombre Objetivo</span></td>
+					<td><span wicket:id="estado">Estado Objetivo</span></td>
+				</tr>
+			</table>
+		</div>
+		<div>
+			<table>
+				<tr>
+					<th>Log</th>
+				</tr>
+				<tr wicket:id="logs">
+					<td><span wicket:id="mensaje">Mensaje log</span></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div>
+		<label>Nombre: </label><span wicket:id="nivelParaJugar">NombreNivel</span>
+		<br /> <label>Dificultad: </label><span wicket:id="dificultad">Dificultad</span>
+		<br /> <label>Puntos: </label><span wicket:id="puntosAlcanzados">120</span>
+		<br /> <label>Movimientos:</label><span
+			wicket:id="movimientosRestantes">4</span> <br />
+	</div>
+	<div>
+		<table>
+			<tr wicket:id="filas">
+				<td wicket:id="celdas"><a wicket:id="celda" href="#"><img
+						type="image" wicket:id="image" /></a></td>
+			</tr>
+		</table>
+	</div>
+	<div>
+		<a href="#" wicket:id="reiniciar">Reiniciar</a> <a href="#"
+			wicket:id="salir">Salir</a>
+	</div>
+</body>
+</html>

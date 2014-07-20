@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Mundo</title>
+</head>
+<body>
+	<div id="datosJugador" style="float: right;">
+	<fieldset>
+		<legend>Datos Jugador</legend>
+		<label>Jugador: </label><span wicket:id="jugador.nombre">nombre</span> <br />
+		<label>Puntaje Total: </label><span wicket:id="jugador.puntaje">2425</span> <br />
+		<label>Dificultad: </label><span wicket:id="jugador.dificultadSeleccionada">Facil</span>
+	</fieldset>
+	</div>
+<!-- 	<div> -->
+<!-- 	<fieldset> -->
+<!-- 	<legend>Datos Niveles</legend> -->
+<!-- 		<table id="tablaNiveles"> -->
+<!-- 		<tr> -->
+<!-- 		<th>Nombre nivel</th> -->
+<!-- 		<th>Max. Puntaje</th> -->
+<!-- 		</tr> -->
+<!-- 		<tr wicket:id="nivelesPropios" id="main" width="100%"> -->
+<!-- 		<td> -->
+<!--             	<span wicket:id="nombre">Nombre Nivel</span> -->
+<!-- 				</td>                 -->
+
+<!--             	<td> -->
+<!--        	    	<span wicket:id="nombre">Nombre Nivel</span> -->
+<!--    	        	</td> -->
+<!--    	    </tr> -->
+<!-- 		</table> -->
+<!-- 	</fieldset> -->
+<!-- 	</div> -->
+	<div style="float: right;">
+	<fieldset>
+		<legend>Cambia Dificultad</legend>
+		<a href="#" wicket:id="facil">Facil</a> <br />
+		<a href="#" wicket:id="medio">Medio</a> <br />
+		<a href="#" wicket:id="dificil">Dificil</a> <br />
+	</fieldset>
+	</div>
+	<h2>Selección de niveles</h2>
+	<div>
+	<fieldset >
+		<legend>Selecciona nivel</legend>
+		<form wicket:id="nivelesForm">
+			<select wicket:id="niveles">
+        		<option>Nivel</option>
+        </select>
+        <br />
+			<input type="submit" wicket:id="jugarNivel" value="Jugar">
+			<span wicket:id="feedback">Mensaje</span>
+		</form>
+	</fieldset>
+	</div>
+	<div>
+		<a href="#" wicket:id="abrirEditor">Editor</a>
+	</div>
+	<div>
+		<a href="#" wicket:id="reiniciarJuego">Reiniciar Juego</a>
+	</div>
+	<div>
+		<a href="#" wicket:id="salir">Salir</a>
+	</div>
+	
+
+</body>
+</html>

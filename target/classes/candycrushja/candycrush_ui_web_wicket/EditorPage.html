@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html xmlns:wicket="http://wicket.apache.org">
+
+<head>
+	<title>Candy crush</title>
+</head>
+
+<body>
+
+	<center>
+
+		<div id="datosJugador" style="float: right;">
+		<label>Jugador: </label><span wicket:id="jugador">Nombre</span> <br />
+		</div>
+
+		<h1>Editor de niveles</h1>
+
+		<br>
+
+		<form wicket:id="formEditor">
+		
+		<table id="main" width="50%">
+			
+			<tr>
+			<th id="main" width="25%" align="left">Nombre nivel </th>
+			<th id="main" width="05%"> </th>
+			<th id="main" width="05%"> </th>
+			<th id="main" width="05%"> </th>
+			</tr>
+		
+			<tr wicket:id="nivelesPropios" id="main" width="100%">
+			
+				<td id="main" width="25%">
+            	<span wicket:id="nombre">Nombre Nivel</span>
+				</td>                
+
+            	<td id="main" width="05%">
+       	    	<input type="submit" wicket:id="editar" value="Editar"/>
+   	        	</td>
+
+   	        	<td id="main" width="05%">
+       	    	<input type="submit" wicket:id="borrar" value="Borrar"/>
+   	        	</td>
+
+   	        	<td id="main" width="05%">
+       	    	<input type="submit" wicket:id="jugar" value="Jugar"/>
+   	        	</td>
+
+			</tr>
+			
+		</table>
+		
+		<br>
+		<br>
+		
+		<input wicket:id="agregar" type="submit" value="Agregar nivel">
+		<input wicket:id="salir" type="submit" value="Salir del editor">
+		
+		</form>
+
+	</center>
+
+</body>
+
+</html>

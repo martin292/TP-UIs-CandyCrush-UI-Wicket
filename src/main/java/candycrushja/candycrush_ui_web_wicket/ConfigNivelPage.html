@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:wicket="http://wicket.apache.org">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Candy crush</title>
+</head>
+
+<body>
+
+	<div id="datosJugador" style="float: right;">
+		<label>Jugador: </label><span wicket:id="jugador">Nombre</span> <br />
+	</div>
+
+	<center>
+
+		<h1>Configurar juego</h1>
+
+		<form wicket:id="formNivel">
+			Nombre: <input wicket:id="nombre" type="text" name="nombre"><br>
+			Filas: <input wicket:id="filas" type="text" name="filas"><br>
+			Columnas: <input wicket:id="columnas" type="text" name="columnas"><br>
+			Movimientos: <input wicket:id="movimientosDisponibles" type="text" name="movimientos"><br>
+			<br>
+
+			<fieldset>
+
+			<table id="main" width="50%">
+
+				<tr>
+					<th id="main" width="25%" aling="left">Objetivos:</th>
+					<th id="main" width="05%">Editar</th>
+					<th id="main" width="05%">Borrar</th>
+				</tr>
+
+				<tr wicket:id="objetivos" id="main" width="100%">
+
+					<td id="main" width="25%"><span wicket:id="nombre">Nombre</span>
+					</td>
+
+					<td id="main" width="05%"><input type="submit"
+						wicket:id="editar" value="Editar" /></td>
+
+					<td id="main" width="05%"><input type="submit"
+						wicket:id="borrar" value="Borrar" /></td>
+
+				</tr>
+
+			</table>
+			
+			<br>
+			
+			<input wicket:id="gExp" type="submit" value="Agregar grandes explosiones"> 
+			<input wicket:id="expCol" type="submit" value="Agregar explosiones por color"> 
+			
+			</fieldset>
+
+			<br>
+			<br>
+			 
+			<input wicket:id="aceptarNivel" type="submit" value="Aceptar"> 
+			<!-- <input wicket:id="cancelarNivel" type="submit" value="Volver"> -->
+			
+			<br>
+			
+			<span wicket:id="mensage">Mensaje</span>
+
+		</form>
+
+	</center>
+
+</body>
+
+</html>

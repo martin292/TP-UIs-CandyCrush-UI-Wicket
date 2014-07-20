@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:wicket="http://wicket.apache.org">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Candy Crush</title>
+</head>
+
+<body>
+
+	<div id="datosJugador" style="float: right;">
+		<label>Jugador: </label><span wicket:id="jugador">Nombre</span> <br />
+	</div>
+
+	<center>
+
+	<form wicket:id="formObjetivo" >
+
+		<fieldset>
+
+			<legend>Objetivo</legend>
+
+			<br>
+			Color: <select wicket:id="colores"> <option>COLOR</option> </select>
+			<br>
+				
+			Cantidad: <input wicket:id="cantidad" type="text" name="cantidad"><br>
+
+			<input wicket:id="aceptar" type="submit" value="Aceptar">
+			<!-- <input wicket:id="cancelar" type="submit" value="Volver"> -->
+			
+			<br>
+			
+			<span wicket:id="mensage">Mensaje</span>
+
+		</fieldset>
+
+	</form>
+
+ 	</center>
+
+</body>
+</html>
